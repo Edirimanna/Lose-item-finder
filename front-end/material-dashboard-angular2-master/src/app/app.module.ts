@@ -14,6 +14,7 @@ import {
   AgmCoreModule
 } from '@agm/core';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
+import { RegisterItemComponent } from './popupModule/register-item/register-item.component';
 
 @NgModule({
   imports: [
@@ -33,6 +34,7 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
   declarations: [
     AppComponent,
     AdminLayoutComponent,
+    RegisterItemComponent,
     
     
 
