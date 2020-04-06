@@ -2,6 +2,8 @@ import { Routes } from '@angular/router';
 import { UserProfileComponent } from '../../user-profile/user-profile.component';
 import { MapsComponent } from '../../maps/maps.component';
 import { NotificationsComponent } from '../../notifications/notifications.component';
+import { ViewLoseItemComponent } from '../../view-lose-item/view-lose-item.component';
+import { AddLoseItemComponent } from '../../add-lose-item/add-lose-item.component';
 export const AdminLayoutRoutes: Routes = [
     // {
     //   path: '',
@@ -48,4 +50,6 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'user-profile',   component: UserProfileComponent },
     { path: 'maps',           component: MapsComponent },
     { path: 'notifications',  component: NotificationsComponent },
+    { path: 'view-item' , component: ViewLoseItemComponent},
+    { path: 'add-item' , component: AddLoseItemComponent}
 ];
