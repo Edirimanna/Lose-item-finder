@@ -14,6 +14,8 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatCardModule} from '@angular/material/card';
 import { ViewLoseItemComponent } from '../../view-lose-item/view-lose-item.component';
 import { AddLoseItemComponent } from '../../add-lose-item/add-lose-item.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   imports: [
@@ -26,7 +28,10 @@ import { AddLoseItemComponent } from '../../add-lose-item/add-lose-item.componen
     MatInputModule,
     MatSelectModule,
     MatTooltipModule,
-    MatCardModule
+    MatCardModule,
+    MatDialogModule,
+    MatButtonModule
+    
     
   ],
   declarations: [
