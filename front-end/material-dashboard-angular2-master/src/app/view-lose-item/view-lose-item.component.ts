@@ -22,11 +22,14 @@ export class ViewLoseItemComponent implements OnInit {
 
   ngOnInit(){
     console.log("line-1")
+
+    //add Item in the pool
     this.service.getAllItem().subscribe( res=>{
       console.log(res);
       this.data=res;
     });
   }
+  //open popup module
   openDialog(id :Number) {
     console.log(id);
     this.dialog.open(RegisterItemComponent, {
@@ -34,6 +37,17 @@ export class ViewLoseItemComponent implements OnInit {
         id
       }
     });
+  }
+
+  //delete item
+  deleteItem(itemId){
+    console.log("delete-line-1");
+    console.log(itemId);
+    this.service.deleteItem(itemId).subscribe(res =>{
+      alert("deleted Item");
+      console.log(res)
+    }, error => console.log('There was an error: ', error))
+    
   }
 
 }

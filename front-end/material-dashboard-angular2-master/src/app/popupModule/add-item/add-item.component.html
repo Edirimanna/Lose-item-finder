@@ -8,11 +8,11 @@
                         <p class="card-category">Complete your field</p>
                     </div>
                     <div class="card-body">
-                        <form>
+                        <form (ngSubmit)= "onSubmit()">
                             <div class="row">
                                 <div class="col-md-5">
                                   <mat-form-field class="example-full-width">
-                                      <input matInput placeholder="Your Name ">
+                                      <input matInput placeholder="Your Name " [(ngModel)]="item.finderName" name="finderName" >
                                     </mat-form-field>
                                 </div>
                                 <div class="col-md-3">
