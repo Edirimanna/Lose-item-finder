@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
-import { RegisterItemComponent } from 'app/popupModule/register-item/register-item.component';
+import { AddItemComponent } from 'app/popupModule/add-item/add-item.component';
 
 export interface DialogData {
   animal: 'panda' | 'unicorn' | 'lion';
@@ -22,7 +22,7 @@ export class AddLoseItemComponent implements OnInit {
   }
 
   openDialog() {
-    this.dialog.open(RegisterItemComponent, {
+    this.dialog.open(AddItemComponent, {
       data: {
         animal: 'panda'
       }

@@ -3,7 +3,7 @@ import { HttpService } from 'app/services/bookService/services.service';
 import { Observable } from 'rxjs';
 import { Item } from 'app/models/item';
 import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
-import { RegisterItemComponent } from '../popupModule/register-item/register-item.component';
+import { RegisterItemComponent } from '../popupModule/viewItem/register-item.component';
 
 export interface DialogData {
   animal: 'panda' | 'unicorn' | 'lion';

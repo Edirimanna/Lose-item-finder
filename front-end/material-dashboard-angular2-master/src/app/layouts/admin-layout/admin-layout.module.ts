@@ -17,6 +17,9 @@ import { AddLoseItemComponent } from '../../add-lose-item/add-lose-item.componen
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
 
+import {MatDatepickerModule} from '@angular/material/datepicker';
+
+
 @NgModule({
   imports: [
     CommonModule,
@@ -30,7 +33,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatTooltipModule,
     MatCardModule,
     MatDialogModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDatepickerModule
     
     
   ],
