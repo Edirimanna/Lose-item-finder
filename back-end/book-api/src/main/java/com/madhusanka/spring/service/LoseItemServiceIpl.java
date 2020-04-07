@@ -21,6 +21,18 @@ public class LoseItemServiceIpl implements LoseItemService {
 	public List<Item> list() {
 		return loseItemDAO.list();
 	}
+
+	@Override
+	@Transactional
+	public long save(Item item) {
+		return loseItemDAO.save(item);
+	}
+
+	@Override
+	@Transactional
+	public void delete(long id) {
+		loseItemDAO.delete(id);	
+	}
 	
 
 }

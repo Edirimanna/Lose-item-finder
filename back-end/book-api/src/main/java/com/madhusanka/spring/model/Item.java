@@ -5,22 +5,23 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-@Entity(name = "LoseItem")
+@Entity(name = "Item")
 public class Item {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private String id;
+	private Long id;
 	private String finderName;
 	private String finderAddress;
-	private int finderContactno;
+	private String finderContactno;
 	private String findLocation;
 	private String findTime;
 	private String description;
-	public String getId() {
+	
+	public Long getId() {
 		return id;
 	}
-	public void setId(String id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public String getFinderName() {
@@ -35,10 +36,10 @@ public class Item {
 	public void setFinderAddress(String finderAddress) {
 		this.finderAddress = finderAddress;
 	}
-	public int getFinderContactno() {
+	public String getFinderContactno() {
 		return finderContactno;
 	}
-	public void setFinderContactno(int finderContactno) {
+	public void setFinderContactno(String finderContactno) {
 		this.finderContactno = finderContactno;
 	}
 	public String getFindLocation() {

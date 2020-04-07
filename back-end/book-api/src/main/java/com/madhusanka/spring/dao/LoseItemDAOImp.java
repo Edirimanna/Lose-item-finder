@@ -21,6 +21,20 @@ public class LoseItemDAOImp implements LoseItemDAO {
 		
 	}
 
+	@Override
+	public long save(Item item) {
+		sessionFactory.getCurrentSession().save(item);
+		return item.getId();
+	}
+
+	@Override
+	public void delete(long id) {
+		Item item  = sessionFactory.getCurrentSession().byId(Item.class).load(id);
+		sessionFactory.getCurrentSession().delete(item);
+		
+		
+	}
+
 
 	
 

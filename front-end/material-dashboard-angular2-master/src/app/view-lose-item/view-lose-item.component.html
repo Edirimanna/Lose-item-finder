@@ -3,10 +3,14 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-8">
-                <div class="card"  *ngFor="let item of data">
-                    <h5>{{item.id}}</h5>
-                     <h5>{{item.title}}</h5>
-                     <h5>{{item.auther}}</h5>
+                <div class="card"  *ngFor="let item of data"> 
+                    <div class="class1">
+                    <h5><b>Finder Name </b> &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :- {{item.finderName}} </h5>
+                    <h5> <b>Finder Location</b> &nbsp;&nbsp; &nbsp; &nbsp;:- {{item.findLocation}}</h5>
+                    <h5><b>Finder Contact No</b> &nbsp;:-{{item.finderContactno}}</h5>
+                </div>
+                     <button mat-button (click)="openDialog(item.id)">More Detail</button>
+                     
                 </div>
             </div>
         </div>

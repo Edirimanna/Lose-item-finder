@@ -1,5 +1,9 @@
 export class Item{
     id: number;
-    title: String;
-    auther: String;
+    finderName: String;
+    finderAddress: String;
+	finderContactno: String;
+	findLocation: String;
+    findTime: String;
+    description: String;
 }

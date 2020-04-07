@@ -14,7 +14,7 @@ export class HttpService {
 //get All Lose Item
 
 getAllItem(): Observable<any>{
- return this.http.get(Constants.BASE_URL+ '/api/book');
+ return this.http.get(Constants.BASE_URL+ '/item/all-item');
   
 }
 

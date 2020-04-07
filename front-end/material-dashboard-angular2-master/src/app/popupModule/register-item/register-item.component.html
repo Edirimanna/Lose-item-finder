@@ -1,15 +1,28 @@
-<h1 mat-dialog-title>Favorite Animal</h1>
+<h1 mat-dialog-title>Finder Detaill</h1>
 <div mat-dialog-content>
-  My favorite animal is:
-  <ul>
+Detail of finder
+<a *ngFor="let item of popDeta" >
+  <ul *ngIf= "data.id == item.id " >
     <li>
-      <span *ngIf="data.animal === 'panda'">&#10003;</span> Panda
+      <span>&#10003;</span> {{item.finderName}}
     </li>
     <li>
-      <span *ngIf="data.animal === 'unicorn'">&#10003;</span> Unicorn
+      <span>&#10003;</span> {{item.finderAddress}}
     </li>
     <li>
-      <span *ngIf="data.animal === 'lion'">&#10003;</span> Lion
+      <span>&#10003;</span> {{item.finderContactno}}
     </li>
+    <li>
+      <span>&#10003;</span> {{item.findLocation}}
+    </li>
+    <li>
+      <span>&#10003;</span> {{item.findTime}}
+    </li>
+    <li>
+      <span>&#10003;</span> {{item.description}}
+    </li>
+
+   
   </ul>
+</a>
 </div>
