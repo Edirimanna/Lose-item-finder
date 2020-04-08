@@ -1,0 +1,50 @@
+//item databse ------------>>>>>>>>>>>>>>>>>
+
+        private Long id;
+	private String finderName;
+	private String finderAddress;
+	private String finderContactno;
+	private String findLocation;
+	private String findTime;
+	private String description;
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-----------Details---------->>>>>>>>>>>>>>>>>>>>>>>
+
+api--->>>>   Get api get all item from database
+
+		   http://localhost:8080/bookapi/item/all-item
+
+eg==>
+
+{
+	
+	"finderName" : "Sajith Ediirmanna",
+	"finderAddress" : "2nd mile post,siyarapitiya,katuwana",
+	"finderContactno"  : "0702165728",
+	"findLocation" : "town",
+	"findTime" : "2.00pm",
+	"description" : "onlu id card"
+	
+}
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+api --->>>>   post api add 
+
+		 http://localhost:8080/bookapi/item/add-item
+
+eg==>>
+
+[
+    {
+        "id": 1,
+        "finderName": null,
+        "finderAddress": "2nd mile post,siyarapitiya,katuwana",
+        "finderContactno": "0702165728",
+        "findLocation": "town",
+        "findTime": "2.00pm",
+        "description": "onlu id card"
+    },
+   
+]
