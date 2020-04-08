@@ -5,25 +5,26 @@ Detail of finder
  
   <ul *ngIf= "data.id == item.id " >
     <li>
-      <span>&#10003;</span> {{item.finderName}}
+      <span><b> Finder full name :-</b> &nbsp; &nbsp;</span> {{item.finderName}}
     </li>
     <li>
-      <span>&#10003;</span> {{item.finderAddress}}
+      <span><b> Finder Address &nbsp; :-</b> &nbsp; &nbsp;&nbsp; </span>{{item.finderAddress}}
     </li>
     <li>
-      <span>&#10003;</span> {{item.finderContactno}}
+      <span><b> Finder Contact Number &nbsp; :-</b> &nbsp; &nbsp;&nbsp; </span> {{item.finderContactno}}
     </li>
     <li>
-      <span>&#10003;</span> {{item.findLocation}}
+      <span><b> Find Place &nbsp; :-</b> &nbsp; &nbsp;&nbsp; </span>{{item.findLocation}}
     </li>
     <li>
-      <span>&#10003;</span> {{item.findTime}}
+      <span><b> Find Time &nbsp; :-</b> &nbsp; &nbsp;&nbsp; </span> {{item.findTime}}
     </li>
     <li>
-      <span>&#10003;</span> {{item.description}}
+      <span><b> Description &nbsp; :-</b> &nbsp; &nbsp;&nbsp; </span> {{item.description}}
     </li>
 
-   
+    <button mat-raised-button type="submit" class="btn btn-danger pull-right">Cancel</button>
   </ul>
+  
 </a>
 </div>

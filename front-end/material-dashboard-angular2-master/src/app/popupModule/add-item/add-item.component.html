@@ -17,12 +17,12 @@
                                 </div>
                                 <div class="col-md-3">
                                     <mat-form-field class="example-full-width">
-                                      <input matInput placeholder="Your Address">
+                                      <input matInput placeholder="Your Address" [(ngModel)]="item.finderAddress" name="finderAddress">
                                     </mat-form-field>
                                 </div>
                                 <div class="col-md-4">
                                     <mat-form-field class="example-full-width">
-                                      <input matInput placeholder="Your Phone Number" type="text">
+                                      <input matInput placeholder="Your Phone Number"  [(ngModel)]="item.finderContactno" type="text" name="finderContactno">
                                     </mat-form-field>
                                 </div>
                             </div>
@@ -31,7 +31,7 @@
                                   <mat-form-field class="example-full-width">
                                   
                                         <mat-label>Find Date</mat-label>
-                                        <input matInput [matDatepicker]="picker">
+                                        <input matInput [matDatepicker]="picker" [(ngModel)]="item.findTime" name="findTime">
                                         <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                                         <mat-datepicker #picker></mat-datepicker>
                                       
@@ -39,7 +39,7 @@
                                 </div>
                                 <div class="col-md-3">
                                   <mat-form-field class="example-full-width">
-                                    <input matInput placeholder="Find Place" type="text">
+                                    <input matInput placeholder="Find Place"  [(ngModel)]="item.findLocation" name="findLocation" type="text">
                                   </mat-form-field>
                                 </div>
                                 <div class="row">
